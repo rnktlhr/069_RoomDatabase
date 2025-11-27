@@ -1,5 +1,6 @@
 package com.example.praktikum7.repositori
 
+import android.app.Application
 import android.content.Context
 import com.example.praktikum7.room.DatabaseSiswa
 
@@ -16,3 +17,11 @@ class ContainerDataApp(private val context: Context):
     }
 }
 
+class AplikasiSiswa : Application(){
+    lateinit var container: ContainerApp
+
+    override fun onCreate() {
+        super.onCreate()
+        container = ContainerDataApp(this)
+    }
+}
