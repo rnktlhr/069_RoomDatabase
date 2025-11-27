@@ -50,4 +50,11 @@ data class DetailSiswa(
  */
 
 
+fun DetailSiswa.toSiswa(): Siswa = Siswa(
+    id = id,
+    nama = nama,
+    alamat = alamat,
+    telepon = telpon
+)
+
 
