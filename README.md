@@ -8,3 +8,5 @@
    <img width="493" height="969" alt="image" src="https://github.com/user-attachments/assets/45cf066e-74c6-4fd3-8568-4fd2d80ff925" />
 5. Hapus
    <img width="521" height="974" alt="image" src="https://github.com/user-attachments/assets/dc1dd08d-5336-44f8-ba0d-770610471f35" />
+6. Edit
+   <img width="554" height="986" alt="image" src="https://github.com/user-attachments/assets/d1b0a1fa-5628-470e-8d7d-28623e1fa0f3" />
