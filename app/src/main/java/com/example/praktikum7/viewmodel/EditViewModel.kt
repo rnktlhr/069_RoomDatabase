@@ -27,17 +27,17 @@ class EditViewModel(
             uiStateSiswa = repositoriSiswa.getSiswaStream(idSiswa)
                 .filterNotNull()
                 .first()
-                .toUIStateSiswa(true)
+                .toUiStateSiswa(true)
         }
     }
 
-    fun updateUiState(detailsSiswa: DetailSiswa) {
+    fun updateUiState(detailSiswa: DetailSiswa) {
         uiStateSiswa =
-            uiStateSiswa.copy(detailsSiswa = detailsSiswa, isEntryValid = validasiInput(detailsSiswa))
+            uiStateSiswa.copy(detailSiswa = detailSiswa, isEntryValid = validasiInput(detailSiswa))
     }
 
-    private fun validasiInput(uiStateSiswa: DetailSiswa = uiStateSiswa.detailSiswa): Boolean {
-        return with(uiStateSiswa) {
+    private fun validasiInput(uiState: DetailSiswa = uiStateSiswa.detailSiswa): Boolean {
+        return with(uiState) {
             nama.isNotBlank() && alamat.isNotBlank() && telpon.isNotBlank()
         }
     }
